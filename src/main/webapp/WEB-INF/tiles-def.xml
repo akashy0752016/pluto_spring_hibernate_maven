@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definations" template="/WEB-INF/jsp/template/template.jsp">
+		<put-attribute name="title" value="PLUTO" />
+		<put-attribute name="header" value="/WEB-INF/jsp/common/header.jsp" />
+		<put-attribute name="leftsidebar" value="/WEB-INF/jsp/common/left.jsp" />
+		<put-attribute name="center" value="" />
+		<put-attribute name="rightsidebar" value="/WEB-INF/jsp/common/right.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/common/footer.jsp" />
+	</definition>
+	
+	<definition name="home" extends="base.definations">
+		<put-attribute name="center" value="/WEB-INF/jsp/home/index.jsp" />
+	</definition>
+</tiles-definitions>
